@@ -69,7 +69,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/auresjs/api.git"
+        "url": "https://github.com/auresorg/auresjs.git"
     },
     "bugs": {
         "url": "https://github.com/auresjs/api/issues"
