@@ -1,6 +1,6 @@
 {
     "name": "@auresjs/api",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A JavaScript/TypeScript client for Aures API",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
