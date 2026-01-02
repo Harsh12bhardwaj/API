@@ -1,0 +1,94 @@
+{
+    "name": "@auresjs/api",
+    "version": "1.0.0",
+    "description": "A JavaScript/TypeScript client for Aures API",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "unpkg": "dist/index.umd.js",
+    "jsdelivr": "dist/index.umd.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.esm.js",
+            "require": "./dist/index.cjs.js",
+            "default": "./dist/index.esm.js"
+        },
+        "./profile": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/modules/profile.esm.js",
+            "require": "./dist/modules/profile.cjs.js"
+        },
+        "./projects": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/modules/projects.esm.js",
+            "require": "./dist/modules/projects.cjs.js"
+        },
+        "./experience": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/modules/experience.esm.js",
+            "require": "./dist/modules/experience.cjs.js"
+        },
+        "./awards": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/modules/awards.esm.js",
+            "require": "./dist/modules/awards.cjs.js"
+        },
+        "./certificates": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/modules/certificates.esm.js",
+            "require": "./dist/modules/certificates.cjs.js"
+        },
+        "./skills": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/modules/skills.esm.js",
+            "require": "./dist/modules/skills.cjs.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepublishOnly": "npm run build",
+        "type-check": "tsc --noEmit"
+    },
+    "keywords": [
+        "aures",
+        "portfolio",
+        "api",
+        "developer",
+        "profile",
+        "certificates"
+    ],
+    "author": "M Vishok",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/auresjs/api.git"
+    },
+    "bugs": {
+        "url": "https://github.com/auresjs/api/issues"
+    },
+    "homepage": "https://github.com/auresjs/api#readme",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^25.0.7",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^11.1.5",
+        "rollup": "^4.0.2",
+        "rollup-plugin-dts": "^6.1.0",
+        "tslib": "^2.6.2",
+        "typescript": "^5.2.2"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
