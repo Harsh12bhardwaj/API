@@ -1,6 +1,6 @@
 import { AuresError } from "../error";
 
-const DEFAULT_BASE_URL = 'https://aures.vishok.me';
+const DEFAULT_BASE_URL = 'https://aures.dev';
 const DEFAULT_TIMEOUT = 10000;
 
 export async function apiFetch<T>(

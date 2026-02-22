@@ -9,7 +9,7 @@ export async function loadProfile(
         includeEmail?: boolean;
     } = {}
 ): Promise<ProfileData> {
-    const { baseURL = 'https://aures.vishok.me/api/public', includeEmail = false } = options;
+    const { baseURL = 'https://aures.dev/api/public', includeEmail = false } = options;
 
     const select = ['username', 'avatar', 'skills'];
     if (includeEmail) select.push('email');

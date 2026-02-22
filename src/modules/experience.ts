@@ -5,7 +5,7 @@ export async function loadExperience(
     username: string,
     options: { baseURL?: string } = {}
 ): Promise<Experience[]> {
-    const { baseURL = 'https://aures.vishok.me/api/public' } = options;
+    const { baseURL = 'https://aures.dev/api/public' } = options;
 
     const data = await apiFetch<{ experience?: Experience[] }>(`/${username}`, {
         baseURL,

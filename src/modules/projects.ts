@@ -5,7 +5,7 @@ export async function loadProjects(
     username: string,
     options: { baseURL?: string } = {}
 ): Promise<Project[]> {
-    const { baseURL = 'https://aures.vishok.me/api/public' } = options;
+    const { baseURL = 'https://aures.dev/api/public' } = options;
 
     const data = await apiFetch<{ projects?: Project[] }>(`/${username}`, {
         baseURL,

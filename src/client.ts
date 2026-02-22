@@ -19,7 +19,7 @@ export class AuresClient {
     constructor(options: AuresOptions) {
         this.username = options.username;
         this.config = {
-            baseURL: 'https://aures.vishok.me/api/public',
+            baseURL: 'https://aures.dev/api/public',
             timeout: 10000,
             cache: true,
             headers: {},

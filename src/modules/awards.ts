@@ -5,7 +5,7 @@ export async function loadAwards(
     username: string,
     options: { baseURL?: string } = {}
 ): Promise<Award[]> {
-    const { baseURL = 'https://aures.vishok.me/api/public' } = options;
+    const { baseURL = 'https://aures.dev/api/public' } = options;
 
     const data = await apiFetch<{ awards?: Award[] }>(`/${username}`, {
         baseURL,

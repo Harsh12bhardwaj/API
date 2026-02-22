@@ -5,7 +5,7 @@ export async function loadCertificates(
   username: string,
   options: { baseURL?: string } = {}
 ): Promise<Certificate[]> {
-  const { baseURL = 'https://aures.vishok.me/api/public' } = options;
+  const { baseURL = 'https://aures.dev/api/public' } = options;
 
   const data = await apiFetch<{ certificates?: Certificate[] }>(`/${username}`, {
     baseURL,
